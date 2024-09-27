@@ -1,15 +1,17 @@
-all:
-  children:
+
     servers:
       hosts:
         server1:
-          ansible_host: 192.168.1.14
+          ansible_host: 192.168.68.109
+          apache_package: apache2
+          php_package: libapache2-mod-php
         server2:
-          ansible_host: 192.168.1.15
-
-
-
-'192.168.100.153'
-'192.168.100.154'
+          ansible_host: 192.168.68.110
+          apache_package: apache2
+          php_package: libapache2-mod-php
+        centos:
+          ansible_host: 192.168.68.111
+          apache_package: httpd
+          php_package: php
 
 
